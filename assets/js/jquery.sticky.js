@@ -10,16 +10,16 @@
 //              It will only set the 'top' and 'position' of your element, you
 //              might need to adjust the width in some cases.
 
-(function (factory) {
+(function () {
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
-        define(['jquery'], factory);
+        define(['jquery'], );
     } else if (typeof module === 'object' && module.exports) {
         // Node/CommonJS
-        module.exports = factory(require('jquery'));
+        module.exports = (require('jquery'));
     } else {
         // Browser globals
-        factory(jQuery);
+        (jQuery);
     }
 }(function ($) {
     var slice = Array.prototype.slice; // save ref to original slice()
